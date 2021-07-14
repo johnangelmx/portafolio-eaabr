@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eaabr | Portafolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slippry.css">
 </head>
 
 <body>
     <div class="toggle" onclick="toggleMenu();"></div>
     <section class="banner" id="home">
         <div class="imgSidebar">
-            <img src="images/bg.jpg" alt="Presentacion Imagen">
+            <img src="images-lalo/bannerbx.jpg" alt="Presentacion Imagen">
         </div>
         <div class="contentBx">
             <h5 class="logoText">Mi_Portafolio</h5>
@@ -36,44 +37,24 @@
             </ul>
         </div>
     </section>
-    <!-- <div class="toggle" onclick="toggleMenu();"></div>
-    <section class="banner" id="home">
-        <div class="imgSiderbar">
-            <img src="images/bg.jpg" alt="">
-        </div>
-        <div class="contentBx">
-            <h5 class="logoText">My_Portafolio</h5>
-            <div>
-                <h4>Hello<span>, I'm</span></h4>
-                <h2>Muhammaad Irishad</h2>
-                <h4>I'm a Front End Developer.</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, odit quos sunt error qui magni
-                    vitae nesciunt a culpa sit, nisi repellat omnis voluptate! Velit atque laboriosam maiores hic ullam.
-                    Omnis iusto earum necessitatibus </p>
-            </div>
-        </div>
-    </section> -->
     <section class="about" id="about">
         <div class="title white">About
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <h2>Acerca De Mi </h2>
+            <p>“Creando, más allá de lo real”</p>
         </div>
         <div class="content">
             <div class="textBx">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tempore delectus sint? Odit rem
-                    ipsam adipisci tempore blanditiis distinctio, ad consequatur ratione provident in fugit facilis.
-                    Esse incidunt dolorem distinctio! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Consectetur, saepe.
+                    Eduardo A. Bello, Ingeniero en Animación y Efectos Visuales, jefe independiente de EAABR, enfocado
+                    en producción y postproducción de video y fotografía, en base a los conceptos del arte en film y
+                    arte abstracto. Con experiencia en documental científico, video marketing empresarial y coordinador
+                    de imagen y difusión política.
                     <br><br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, neque. Molestiae asperiores dolor
-                    voluptates ut, rerum quidem a aspernatur cupiditate accusantium! Ullam quisquam officiis quis
-                    repellendus sed modi expedita perspiciatis? Lorem ipsum, dolor sit amet consectetur adipisicing
-                    elit. Cupiditate, iusto!
+                    “Estrategia en organización de consumo de estupefacientes”
                 </p>
             </div>
             <div class="imgBx">
-                <img src="images/bg1.jpg" alt="">
+                <img src="images-lalo/bannerbx2.png" alt="">
             </div>
         </div>
     </section>
@@ -129,6 +110,31 @@
             <h2>Recent Work</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur molestiae velit, ipsum magnam aliquam
                 distinctio, facilis suscipit quae deleniti cumque explicabo .</p>
+        </div>
+        <div id="slider">
+            <ul id="slippry">
+                <li>
+                    <img src="images-lalo/slide01.png" alt="Slide número 1">
+                </li>
+                <li>
+                    <img src="images-lalo/slide02.png" alt="Slide número 2">
+                </li>
+                <li>
+                    <img src="images-lalo/slide03.png" alt="Slide número 3">
+                </li>
+                <li>
+                    <img src="images-lalo/slide04.png" alt="Slide número 1">
+                </li>
+                <li>
+                    <img src="images-lalo/slide05.png" alt="Slide número 1">
+                </li>
+                <li>
+                    <img src="images-lalo/slide06.png" alt="Slide número 1">
+                </li>
+                <li>
+                    <img src="images-lalo/slide07.png" alt="Slide número 1">
+                </li>
+            </ul>
         </div>
         <div class="content">
             <div class="workBx">
@@ -198,7 +204,7 @@
 
         </div>
     </section>
-
+    
     <section class="contact" id="contact">
         <div class="title white">
             <h2>Contact Us</h2>
@@ -249,7 +255,9 @@
         </ul>
     </div>
 
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
     <script> // Funcion para abrir el slid menu ,convirtiendo en activa , asi pudiendo manipularlo en css
         function toggleMenu() {
             const menuToggle = document.querySelector('.toggle');
@@ -257,6 +265,15 @@
             menuToggle.classList.toggle('active')
             sidebar.classList.toggle('active')
         }
+
+    </script>
+    <!--Slider Slippry -->
+    <script src="slippry.min.js"></script>
+    <script>
+        $('#slippry').slippry({
+            captions: false,
+            pager: false
+        });
     </script>
 </body>
 
