@@ -60,6 +60,7 @@ section {
 .banner .contentBx,
 .sidebar {
   position: absolute;
+  background-color: #002366; /*Azul Rey*/
   top: 0;
   right: 0;
   width: calc(100% - 500px);
@@ -77,29 +78,35 @@ section {
   font-size: 1.2em;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background: #c55146;
+  background: #D95436;
   color: #fff;
   padding: 0 5px;
 }
 
 .banner .contentBx h4 {
   font-size: 1.5em;
-  color: #333;
+  color: #A9B9D9;
   font-weight: 300;
 }
 
 .banner .contentBx h4 span {
-  color: #c55146;
+  color: #D95436;
   font-size: 1.5em;
   font-weight: 700;
 }
 
 .banner .contentBx h2 {
   font-size: 3em;
-  color: #687db3;
+  color: #A9B9D9;
   line-height: 1em;
 }
 
+.banner .contentBx p{
+  font-size: 1.1em;
+  margin: 20px 0;
+  font-weight: 300;
+  color: whitesmoke;
+}
 p {
   font-size: 1.1em;
   margin: 20px 0;
@@ -231,8 +238,8 @@ p {
 }
 
 .about .content .textBx {
-  min-width: 49%;
-  width: 49%;
+  min-width: 59%;
+  width: 59%;
 }
 
 .about .content .textBx p {
