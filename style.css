@@ -78,30 +78,30 @@ section {
   font-size: 1.2em;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background: #D95436;
+  background: #d95436;
   color: #fff;
   padding: 0 5px;
 }
 
 .banner .contentBx h4 {
   font-size: 1.5em;
-  color: #A9B9D9;
+  color: #a9b9d9;
   font-weight: 300;
 }
 
 .banner .contentBx h4 span {
-  color: #D95436;
+  color: #d95436;
   font-size: 1.5em;
   font-weight: 700;
 }
 
 .banner .contentBx h2 {
   font-size: 3em;
-  color: #A9B9D9;
+  color: #a9b9d9;
   line-height: 1em;
 }
 
-.banner .contentBx p{
+.banner .contentBx p {
   font-size: 1.1em;
   margin: 20px 0;
   font-weight: 300;
@@ -171,7 +171,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: invert(1)
+  filter: invert(1);
 }
 
 .sci li {
@@ -186,7 +186,7 @@ p {
 
 .sci li img:hover {
   opacity: 1;
-  filter: invert(1)
+  filter: invert(1);
 }
 
 .title {
@@ -244,7 +244,7 @@ p {
 
 .about .content .textBx p {
   color: #fff;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .about .content .imgBx {
@@ -314,6 +314,18 @@ p {
 #slider {
   margin-bottom: 30px;
 }
+.work {
+  background-image: url(Images-lalo/slide01.jpg);
+}
+.work .title h2,
+.work .title p {
+  color: #fff;
+  padding: 10px 30px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
 .work .content .workBx {
   position: relative;
   width: 265px;
@@ -362,7 +374,7 @@ p {
 }
 
 .contact {
-  background: #000;
+  background: #002366;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -370,52 +382,20 @@ p {
 }
 
 .contact .contactForm {
-  position: relative;
-  width: 700px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
-
-.contact .contactForm .row {
-  width: 100%;
+.contact .ins,
+.contact .tum {
+  margin-bottom: 30px;
   display: flex;
-}
-
-.contact .contactForm .row .col50 {
-  width: 50%;
-  margin: 10px;
-}
-
-.contact .contactForm .row .col100 {
-  width: 100%;
-  margin: 10px;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-}
-
-.contact .contactForm .row input,
-.contact .contactForm .row textarea {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  outline: none;
-  background: #111;
-  color: #fff;
-  font-size: 16px;
-  resize: none;
-}
-
-.contact .contactForm .row textarea {
+  width: 150px;
   height: 150px;
-}
-
-.contact .contactForm .row input[type="submit"] {
-  background: #00bcd4;
-  color: #fff;
-  padding: 10px 30px;
-  display: inline-block;
-  font-weight: 500;
-  letter-spacing: 2px;
-  cursor: pointer;
-  max-width: 150px;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #00205c, #00256d);
+  box-shadow: 20px 20px 60px #000e29, -20px -20px 60px #0038a3;
 }
 
 .copyright {
@@ -453,49 +433,29 @@ p {
     flex-direction: column;
     margin-top: 0;
   }
-  .about .content .textBx
-  {
+  .about .content .textBx {
     min-width: 100%;
     width: 100%;
   }
-  .about .content .imgBx
-  {
+  .about .content .imgBx {
     margin-left: 0;
   }
-  .services .content .servicesBx
-  {
+  .services .content .servicesBx {
     padding: 30px 20px;
     max-width: 340px;
     margin: 10px;
   }
-  .contactForm
-  {
-    width: 100% !important;
-  }
-  .contactForm .row
-  {
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .contact .contactForm .row .col50
-  {
-    width: 100%;
-  }
+  
   .sidebar ul li a {
     font-size: 1.5em;
   }
 }
 
-@media(max-width: 500px){
+@media (max-width: 500px) {
   .services .content .servicesBx {
     padding: 30px 20px;
     max-width: 100%;
     width: 100%;
     margin: 10px 0;
-
   }
-  
-
 }
-
